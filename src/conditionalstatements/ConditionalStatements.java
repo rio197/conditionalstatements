@@ -5,6 +5,8 @@
  */
 package conditionalstatements;
 
+import java.util.Scanner;
+
 /**
  *
  * @author rio197
@@ -16,9 +18,32 @@ public class ConditionalStatements {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int a = 5;
-        if (a > 1) {
-            System.out.println("I'm greater than 1");
+        System.out.println("Enter a number between 1 and 5");
+        Scanner scanner1 = new Scanner(System.in);
+        int a = scanner1.nextInt();
+        
+        if (a == 1) {
+            System.out.println("One");
+        }
+        
+        else if (a == 2) {
+            System.out.println("Two");
+        }
+        
+        else if (a == 3) {
+            System.out.println("Three");
+        }
+        
+        else if (a == 4) {
+            System.out.println("Four");
+        }
+        
+        else if (a == 5) {
+            System.out.println("Five");
+        }
+        
+        else {
+            System.out.println("Wrong Input");
         }
     }    
 }
